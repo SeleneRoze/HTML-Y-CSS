@@ -1,0 +1,40 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+a{
+    text-decoration: none;
+    color:#000; 
+}
+    
+ .Title { margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .Title span {
+    color: #037bc0;
+  }
+.nav-container{ 
+    border-top:1px solid #e1e1e1;
+    text-transform: uppercase;
+    
+}
+  .first-nav{
+    
+    padding: 20px 0;
+  }
+.contain{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  .hero{
+    background-image: url(../images/principal.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 950px;
+    
+  }
