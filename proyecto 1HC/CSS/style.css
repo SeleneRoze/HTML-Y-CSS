@@ -26,6 +26,9 @@ a{
   .first-nav{
     
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    
   }
 .contain{
     max-width: 1200px;
