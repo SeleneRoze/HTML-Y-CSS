@@ -1,43 +1,74 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 a{
-    text-decoration: none;
-    color:#000; 
+  text-decoration: none;
+  color:#000; 
 }
-    
- .Title { margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .Title span {
-    color: #037bc0;
-  }
+img{
+  max-width: 100%;
+  display:block;
+}
+  
+.Title { margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Title span {
+  color: #037bc0;
+}
 .nav-container{ 
-    border-top:1px solid #e1e1e1;
-    text-transform: uppercase;
-    
+  border-top:1px solid #e1e1e1;
+  text-transform: uppercase;
+  
 }
-  .first-nav{
-    
-    padding: 20px 0;
+.first-nav{
+  
+  padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    
-  }
-.contain{
-    max-width: 1200px;
-    margin: 0 auto;
 }
-  .hero{
-    background-image: url(../images/principal.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 950px;
-    
-  }
+.contain{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero{
+  background-image: url(../images/principal.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 700px;
+  
+}
+/**Categorías*/
+.categories h2 {
+text-align: center;
+}
+.category a {
+  text-align: center;
+  display:block;
+  padding:20px;
+  font-size: 20px;
+
+}
+.category a:hover{
+  background-color: #037bc0;
+  color: #ffffff;
+  border-bottom-right-radius: 10px;
+}
+.category-list{
+  display: grid ;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items:center;
+}
+/**Globales*/
+h1, h2,h3{
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+}
